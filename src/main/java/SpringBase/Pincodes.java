@@ -27,7 +27,7 @@ public class Pincodes {
         PincodesModel pm;
         HashMap<Integer,PincodesModel> zonePincodeData = new HashMap<Integer,PincodesModel>();
 
-        for(i=0,j=0 ;i<2; i++,j+=5) {
+        for(i=0,j=0 ;i<1; i++,j+=5) {
             if(i+1 == pincodeBatch) {
                 batchedZones = zp.zone.subList(j, (int)zonesDataSize);
             } else {

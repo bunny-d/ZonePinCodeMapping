@@ -24,6 +24,8 @@ public class ZonePincode {
     private ESMapping esMapping;
     @Autowired
     private QueueData queueData;
+    @Autowired
+    private Publisher publisher;
 
     public static void main(String [] args) {
         ApplicationContext ctx = new AnnotationConfigApplicationContext(ObjectsConfig.class);
@@ -57,7 +59,6 @@ public class ZonePincode {
             return;
         }
 
-
-
+        this.publisher.sendToQueue(zoneWiseQueueData);
     }
 }

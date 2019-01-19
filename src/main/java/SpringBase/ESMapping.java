@@ -18,6 +18,7 @@ public class ESMapping {
         } catch(Exception e) {
 
         }
+        System.out.println(mapping.toMap());
         rest.put(url, mapping.toMap(), ConstantsConfig.ES_INDEX_NAME);
     }
 

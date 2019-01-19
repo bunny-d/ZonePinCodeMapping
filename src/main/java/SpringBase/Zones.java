@@ -8,7 +8,6 @@ public class Zones {
     private RestTemplate rest = new RestTemplate();
 
     public ResponseEntity getZones(String url) {
-        System.out.println(url);
         ResponseEntity re = rest.getForEntity(url, ZonesModel.class);
         return re;
     }
